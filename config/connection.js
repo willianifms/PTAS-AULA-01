@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize("postgres://urwcvwzi:i0J7zUZT4JAKp1UU7AJPzV_KEXxyeN--@silly.db.elephantsql.com/urwcvwzi",{
+const sequelize = new Sequelize("Informe a url do elephantSQL",{
 define:{
   timetamps:true,
   underscored:true,
@@ -8,7 +8,7 @@ define:{
 });
 
   try {
-    sequelize.authenticate();
+    //FALTA CÓDIGO AQUI
     console.log('Conectado com o ElephantSQL!');
   } catch (error) {
     console.error('Anteção, a conexão falhou!:', error);
