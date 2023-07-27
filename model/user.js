@@ -7,11 +7,18 @@ const User = db.sequelize.define('name database',{
         allowNull: false,
         primaryKey: true
     },
-    name: {
+    nome: {
         type: db.Sequelize.STRING,
         allowNull: false
     },
-//password & email
-    })
+    email: {
+        type: db.Sequelize.STRING,
+        allowNull: false
+    },
+    senha: {
+        type: db.Sequelize.STRING,
+        allowNull: false
+    },
+})
 User.sync();
 module.exports = User;
