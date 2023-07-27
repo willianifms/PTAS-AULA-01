@@ -14,10 +14,11 @@ app.get('/', (req, res) => {
 })
 
 app.post('/user', (req, res) => {
-    const { name, password } = req.body;
+    const { nome, email, senha } = req.body;
     User.create({
-        name: name,
-        password: password
+        nome: nome,
+        email: email,
+        senha: senha
     }).then(() => {
         res.json('Cadastro de usuário realizado com sucesso!');
         console.log('Cadastro de usuário realizado com sucesso!');

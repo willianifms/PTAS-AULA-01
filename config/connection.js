@@ -7,11 +7,12 @@ define:{
 },
 });
 
-try {
+(async () => {
+  try {
   await sequelize.authenticate();
   console.log('Conectado com o ElephantSQL!');
 } catch (error) {
   console.error('Anteção, a conexão falhou!:', error);
-}
+}})()
 
 module.exports={Sequelize,sequelize};
