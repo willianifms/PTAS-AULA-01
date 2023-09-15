@@ -76,4 +76,4 @@ return res.json(isUserAutenticado)
     }
 }
 
-module.exports = { createUser, selectUsers, autenticaUser }
+module.exports = { createUser, selectUsers, autenticaUser, deleteUser, updateUser }
